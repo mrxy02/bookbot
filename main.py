@@ -17,5 +17,7 @@ def main():
     print("--------- Character Count -------")
     letters_sorted = splitter(all_letters)
     for letter in letters_sorted:
-        print(letter)
+        if letter["char"].isalpha():
+            print(f"{letter['char']}: {letter['num']}")
+    print("============= END ===============")
 main()
